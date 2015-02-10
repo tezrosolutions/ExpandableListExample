@@ -15,10 +15,10 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
 
     private Context context;
     private List<String> expandableListTitle;
-    private HashMap<String, List<String>> expandableListDetail;
+    private HashMap<String, List<ListItemModel>> expandableListDetail;
 
     public ExpandableListAdapter(Context context, List<String> expandableListTitle,
-                                 HashMap<String, List<String>> expandableListDetail) {
+                                 HashMap<String, List<ListItemModel>> expandableListDetail) {
         this.context = context;
         this.expandableListTitle = expandableListTitle;
         this.expandableListDetail = expandableListDetail;
@@ -42,7 +42,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
     @Override
     public View getChildView(int listPosition, final int expandedListPosition,
                              boolean isLastChild, View convertView, ViewGroup parent) {
-        
+
         final ListItemModel expandedListItem = (ListItemModel) getChild(listPosition, expandedListPosition);
         LayoutInflater mInflater = (LayoutInflater) this.context
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);

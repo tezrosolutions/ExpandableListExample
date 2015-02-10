@@ -8,54 +8,15 @@ import java.util.HashMap;
 import java.util.List;
 
 public class ExpandableListDataPump {
-    public static HashMap getData() {
-        HashMap expandableListDetail = new HashMap();
+    public static HashMap<String, List<ListItemModel>> getData() {
+        HashMap<String, List<ListItemModel>> expandableListDetail = new HashMap();
 
 
-        List technology = new ArrayList();
-        ListItemModel item = new ListItemModel();
-        item.title = "Beats sued for noise-cancelling tech";
-        item.isHeader = true;
-        technology.add(item);
 
-        item = new ListItemModel();
-        item.title = "Wikipedia blocks US Congress edits";
-        item.isHeader = false;
-        technology.add(item);
-
-        item = new ListItemModel();
-        item.title = "Google quizzed over deleted links";
-        item.isHeader = false;
-        technology.add(item);
-
-        item = new ListItemModel();
-        item.title = "Nasa seeks aid with Earth-Mars links";
-        item.isHeader = false;
-        technology.add(item);
-
-        item = new ListItemModel();
-        item.title = "The Good, the Bad and the Ugly";
-        item.isHeader = false;
-        technology.add(item);
-
-        item = new ListItemModel();
-        item.title = "Beats sued for noise-cancelling tech";
-        item.isHeader = true;
-        technology.add(item);
-
-        item = new ListItemModel();
-        item.title = "Wikipedia blocks US Congress edits";
-        item.isHeader = false;
-        technology.add(item);
-
-        item = new ListItemModel();
-        item.title = "Google quizzed over deleted links";
-        item.isHeader = false;
-        technology.add(item);
 
 
         List entertainment = new ArrayList();
-        item = new ListItemModel();
+        ListItemModel item = new ListItemModel();
         item.title = "Beats sued for noise-cancelling tech";
         item.isHeader = true;
         entertainment.add(item);
@@ -97,10 +58,52 @@ public class ExpandableListDataPump {
         item.isHeader = false;
         entertainment.add(item);
 
+
+        List technology = new ArrayList();
+         item = new ListItemModel();
+        item.title = "Beats sued for noise-cancelling tech";
+        item.isHeader = true;
+        technology.add(item);
+
+        item = new ListItemModel();
+        item.title = "Wikipedia blocks US Congress edits";
+        item.isHeader = false;
+        technology.add(item);
+
+        item = new ListItemModel();
+        item.title = "Google quizzed over deleted links";
+        item.isHeader = false;
+        technology.add(item);
+
+        item = new ListItemModel();
+        item.title = "Nasa seeks aid with Earth-Mars links";
+        item.isHeader = false;
+        technology.add(item);
+
+        item = new ListItemModel();
+        item.title = "The Good, the Bad and the Ugly";
+        item.isHeader = false;
+        technology.add(item);
+
+        item = new ListItemModel();
+        item.title = "Beats sued for noise-cancelling tech";
+        item.isHeader = true;
+        technology.add(item);
+
+        item = new ListItemModel();
+        item.title = "Wikipedia blocks US Congress edits";
+        item.isHeader = false;
+        technology.add(item);
+
+        item = new ListItemModel();
+        item.title = "Google quizzed over deleted links";
+        item.isHeader = false;
+        technology.add(item);
 
 
         expandableListDetail.put("TECHNOLOGY NEWS", technology);
         expandableListDetail.put("ENTERTAINMENT NEWS", entertainment);
+
 
         return expandableListDetail;
     }
